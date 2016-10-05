@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>绑定银行卡</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/css.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div class="content_mid">
+    <!--头部begin-->
+    <div class="qfb-position"></div>
+    <div class="qfb-head">
+        <div class="logo-main">
+            <a href="javascript:;" onclick="history.go(-1)" class="before"></a>
+            <span class="qfb-title">绑定银行卡</span>
+        </div>
+    </div>
+    <!--头部end-->
+    <!--底部begin-->
+    <div class="qfb-footer">
+        <div class="memprofile">
+            <a href="profile.html"><div class="mcate col-xs-4 col-sm-4 col-md-4 col-lg-4">个人资料</div></a>
+            <a href="bindcard.html"><div class="mcate col-xs-4 col-sm-4 col-md-4 col-lg-4 logcur">绑定银行卡</div></a>
+            <a href="updatapwd.html"><div class="mcate col-xs-4 col-sm-4 col-md-4 col-lg-4 ">修改密码</div></a>
+        </div>
+        <div class="com_form">
+            <div class="chinfo">
+                <h3>绑定银行卡</h3>
+                <span class="tips_binds"> 持卡人默认为真实姓名，在个人资料中填写</span>
+            </div>
+            <form action="" method="post" class="form_conent" role="form">
+                <!--输入框 bof-->
+                <div class="input-group">
+                    <span class="input-group-addon">持卡人</span>
+                    <input type="text" disabled name="cardowner" class="form-control" value="刘德华">
+                </div>
+                <div class="input-group">
+                    <div class="btn-group sel_rig">
+                        <div  class="noborder btn btn-default col-xs-4 col-sm-4 col-md-4 col-lg-4">开户行</div>
+                        <div class=" btn-group col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <div class="noborder btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="stxt">请选择银行</span>
+                                <span class="caret"></span>
+                            </div>
+                            <ul class="dropdown-menu drop-bank">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="">请选择银行</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="1">工商银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="2">招商银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="3">建设银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="4">农业银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="5">中国银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="6">交通银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="7">中信银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="8">邮政银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="9">浦发银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="10">上海浦东发展银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="11">光大银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="12">兴业银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="13">华夏银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="14">平安银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="15">民生银行(实时到账)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" attr="16">广发银行(实时到账)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">开户地址</span>
+                    <input type="text" name="zhName" class="form-control" placeholder="此处还需要调用省市选择器">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">支行名称</span>
+                    <input type="text" name="zhName" class="form-control" placeholder="请输入支行名称">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">银行卡号</span>
+                    <input type="text" name="cardNo" class="form-control" placeholder="请输入银行卡号">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">确认银行卡号</span>
+                    <input type="text" name="recardNo" class="form-control" placeholder="请再次输入银行卡号">
+                    <input type="hidden" name="bank" class="form-control" value="">
+                </div>
+                <!--输入框 eof-->
+                <div class="sub_btn">
+                    <button class="btn btn-danger" type="submit">绑定</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--底部end-->
+</div>
+
+<div class="footer">
+    <div class="line_grey"></div>
+    <div class="line_white"></div>
+    <div class="qfb-footerbox">
+        <p class="qfb-copyright1">Copyright&copy;2013-2015 11k.com All Rights Reserved<br>澳门葡京贵宾会</p>
+    </div>
+
+    <div class="footer_navlink navbar-fixed-bottom">
+        <a data-ajax="false" href="index.html" class="ui-link"><div class="flink01">首页</div></a>
+        <a data-ajax="false" href="" class="ui-link"><div class="flink01">客服</div></a>
+        <a data-ajax="false" href="promo.html" class="ui-link"><div class="flink01">优惠</div></a>
+        <a data-ajax="false" href="aboutus.html" class="ui-link"><div class="flink01">关于我们</div></a>
+        <a data-ajax="false" href="member-home.html" class="ui-link"><div class="flink01">用户中心</div></a>
+    </div>
+</div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(".drop-bank li").mousedown(function () {
+        var _t = $(this);
+        var val = _t.find('a').attr('attr');
+        var txt = _t.find('a').text();
+        var ct  = _t.parent().prev().find('.stxt');
+        ct.text(txt);
+        $(".form_conent input[name=bank]").val(val);
+
+    });
+</script>
+</html>

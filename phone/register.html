@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/css.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-首页'])" href="#" class="navbar-brand">贵宾会LOGO</a>
+            </div>
+            <div role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li><a onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v2doc'])" target="_blank" href="zrgame.html">真人视讯</a></li>
+                    <li><a onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'egame'])" target="_blank" href="bbindz.html">电子游戏</a></li>
+                    <li><a onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'lottery'])" target="_blank" href="lottery.html">彩票游戏</a></li>
+                    <li><a onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'sport'])" target="_blank" href="sport.html">体育竞技</a></li>
+                    <li><a onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'active'])" target="_blank" href="promo.html">活动优惠</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content_mid">
+        <div class="index" id="container" date-role="content">
+            <div id="content02">
+                <form method="post" name="loginform" action="index.htm">
+                    <div id="loginbox">
+                        <div class="frmLeft01">
+                            <div class="formbox01">
+                                <div class="tt_text">用户名：</div>
+                                <div class="ff_inbox">
+                                    <div class="ui-input-text">
+                                        <input type="text" placeholder="请输入账号" onblur="testUsernameBlur()" onfocus="clearMsg(this)" value="" name="RegisterForm[username]" id="username" maxlength="15">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="error_username" class="q-infored"></div>
+
+                        </div>
+                        <div class="frmRight01">
+                            <div class="formbox01">
+                                <div class="tt_text">密码：</div>
+                                <div class="ff_inbox"><div class="ui-input-text"><input onfocus="clearMsg(this)" type="password" placeholder="请输入密码" name="RegisterForm[password]" maxlength="10" id="password"></div></div>
+                            </div>
+                            <div id="error_password" class="q-infored"></div>
+                        </div>
+                        <div class="frmRight01">
+                            <div class="formbox01">
+                                <div class="tt_text">确认密码：</div>
+                                <div class="ff_inbox"><div class="ui-input-text"><input onfocus="clearMsg(this)" onblur="testRepasswordBlur()" type="password" placeholder="请输入密码" name="RegisterForm[repassword]" maxlength="10" id="repassword"></div></div>
+                            </div>
+                            <div id="error_repassword" class="q-infored"></div>
+                        </div>
+                        <div class="frmLeft01">
+                            <div class="formbox01">
+                                <div class="tt_text">真实姓名：</div>
+                                <div class="ff_inbox"><div class="ui-input-text"><input onfocus="clearMsg(this)" type="text" placeholder="请输入真实姓名" value="" name="RegisterForm[realname]" id="realname" maxlength="15"></div></div>
+                            </div>
+                            <div id="error_realname" class="q-infored"></div>
+                        </div>
+                        <div class="frmRight01">
+                            <div class="BtnStyle01 sub_btn">
+                                <button type="submit" class="BtnRed01 ui-link btn btn-danger" onclick="return check(this.form)" id="submit">提交注册</button>
+                                <div class="showinfo">已有账号? <a data-ajax="false" href="login.htm" class="ui-link">登陆</a></div>
+                            </div>
+                        </div>
+                        <div class="clearfloat"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="line_grey"></div>
+        <div class="line_white"></div>
+        <div class="qfb-footerbox">
+            <p class="qfb-copyright1">Copyright&copy;2013-2015 11k.com All Rights Reserved<br>澳门葡京贵宾会</p>
+        </div>
+
+        <div class="footer_navlink navbar-fixed-bottom">
+            <a data-ajax="false" href="index.html" class="ui-link"><div class="flink01">首页</div></a>
+            <a data-ajax="false" href="" class="ui-link"><div class="flink01">客服</div></a>
+            <a data-ajax="false" href="promo.html" class="ui-link"><div class="flink01">优惠</div></a>
+            <a data-ajax="false" href="aboutus.html" class="ui-link"><div class="flink01">关于我们</div></a>
+            <a data-ajax="false" href="member-home.html" class="ui-link"><div class="flink01">用户中心</div></a>
+        </div>
+        <div style="display: none" class="tips_no_login">
+            <span data-href="login.htm" class="link_ct"><i class="icon i_user_login"></i>会员登录</span>
+            <span data-href="register.htm" class="link_ct"><i class="icon i_user_reg"></i>立即加入</span>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/hhSwipe.js"></script>
+
+    <script type="text/javascript">
+
+        //轮播
+        var bullets = document.getElementById('position').getElementsByTagName('li');
+        var banner = Swipe(document.getElementById('mySwipe'), {
+                auto: 4000,
+                continuous: true,
+                disableScroll:false,
+                callback: function(pos) {
+                    var i = bullets.length;
+                    var iw = bullets.length;
+                    while (i--) {
+                        bullets[i].className = ' ';
+                    }
+                    bullets[pos%iw].className = 'cur';
+                }
+            })
+//        function checkUsername() {
+//            var username = $("#username").val();
+//            var num = 0;
+//            var number = 0 ;
+//            var letter = 0 ;
+//            var bigLetter = 0 ;
+//            var chars = 0 ;
+//
+//            if (username.search(/[0-9]/) != -1) {
+//                num += 1;
+//                number =1;
+//            }
+//            if (username.search(/[A-Z]/) != -1) {
+//                num += 1;
+//                bigLetter = 1 ;
+//            }
+//            if (username.search(/[a-z]/) != -1) {
+//                num += 1;
+//                letter = 1 ;
+//            }
+//            if (username.search(/[^A-Za-z0-9]/) != -1) {
+//                num += 1;
+//                chars = 1 ;
+//            }
+//            if(!username)
+//            {
+//                $("#error_username").addClass("q-infored");
+//                $("#error_username").html("密码不能为空");
+//                return false;
+//            }else{
+//                $("#error_username").removeClass("q-infored");
+//                $("#error_username").html("");
+//            }
+//            if (num >= 2 && (username.length >= 4 && username.length <= 10)) {
+//                $("#error_username").removeClass("q-infored");
+//                $("#error_username").html("");
+//                $("#username").css("border","#B0B0B0 solid 1px");
+//                return false;
+//            }else if(username.length < 4 || username.length > 10){
+//                $("#error_username").addClass("q-infored");
+//                $("#error_username").html("用户名由4-10字母和数字组成!");
+//                $(".username").css("border","#B35D5D solid 1px");
+//                return false;
+//            }else if(num == 1){
+//                if(number==1){
+//                    $("#error_username").addClass("q-infored");
+//                    $("#error_username").html("不能全为数字");
+//                }else{
+//                    $("#error_username").removeClass("q-infored");
+//                    $("#error_username").html("");
+//                }
+//                if(letter==1){
+//                    $("#error_username").addClass("q-infored");
+//                    $("#error_username").html("不能全为字母");
+//                }else{
+//                    $("#error_username").removeClass("q-infored");
+//                    $("#error_username").html("");
+//                }
+//                if(bigLetter==1){
+//                    $("#error_username").addClass("q-infored");
+//                    $("#error_username").html("不能全为字母");
+//                }else{
+//                    $("#error_username").removeClass("q-infored");
+//                    $("#error_username").html("");
+//                }
+//                if(chars==1){
+//                    $("#error_username").addClass("q-infored");
+//                    $("#error_username").html("不能包含除字母和数字的其他字符");
+//                }else{
+//                    $("#error_username").removeClass("q-infored");
+//                    $("#error_username").html("");
+//                }
+//                $("#username").css("border","#B35D5D solid 1px");
+//                return false;
+//            }
+//            return true;
+//        }
+
+
+
+        function checkUsername()
+        {
+            var regnumber = /\w*[0-9]+\w*$/;
+            var regletter = /\w*[a-zA-Z]+\w*$/;
+            var username = $.trim($("#username").val());
+            if(!username){
+                $("#error_username").addClass("q-infored");
+                $("#error_username").html("用户名不能为空");
+                return false;
+            }else{
+                $("#error_username").removeClass("q-infored");
+                $("#error_username").html("");
+
+                if(!regnumber.test(username) || !regletter.test(username)){
+                    $("#error_username").addClass("q-infored");
+                    $("#error_username").html("用户名必须为数字和字母组合");
+                    return false;
+                }else{
+                    $("#error_username").removeClass("q-infored");
+                    $("#error_username").html("");
+                }
+                if(username.length<4){
+                    $("#error_username").addClass("q-infored");
+                    $("#error_username").html("用户名不得少于4位");
+                    return false;
+                }else{
+                    $("#error_username").removeClass("q-infored");
+                    $("#error_username").html("");
+                }
+                if(username.length>10){
+                    $("#error_username").addClass("q-infored");
+                    $("#error_username").html("用户名不得超过10位");
+                    return false;
+                }else{
+                    $("#error_username").removeClass("q-infored");
+                    $("#error_username").html("");
+                }
+            }
+            return true;
+        }
+
+
+        /**
+         * 用户名不为空时判断
+         */
+        function testUsernameBlur()
+        {
+            var username = $.trim($("#username").val());
+            if(username){
+                checkUsername();
+            }
+        }
+
+        /**
+         * 验证密码（只是验证最初的填写规范）
+         */
+        function checkPassword()
+        {
+            var regnumber = /\w*[0-9]+\w*$/;
+            var regletter = /\w*[a-zA-Z]+\w*$/;
+            var password = $.trim($("#password").val());
+            if(!password){
+                $("#error_password").addClass("q-infored");
+                $("#error_password").html("密码不能为空");
+                return false;
+            }else{
+                $("#error_password").removeClass("q-infored");
+                $("#error_password").html("");
+
+                if(!regnumber.test(password) || !regletter.test(password)){
+                    $("#error_password").addClass("q-infored");
+                    $("#error_password").html("密码必须为数字和字母组合");
+                    return false;
+                }else{
+                    $("#error_password").removeClass("q-infored");
+                    $("#error_password").html("");
+                }
+                if(password.length<6){
+                    $("#error_password").addClass("q-infored");
+                    $("#error_password").html("密码不得少于6位");
+                    return false;
+                }else{
+                    $("#error_password").removeClass("q-infored");
+                    $("#error_password").html("");
+                }
+                if(password.length>12){
+                    $("#error_password").addClass("q-infored");
+                    $("#error_password").html("密码不得超过12位");
+                    return false;
+                }else{
+                    $("#error_password").removeClass("q-infored");
+                    $("#error_password").html("");
+                }
+            }
+            return true;
+        }
+
+        function checkRepassword(){
+            var password = $.trim($("#password").val());
+            var repassword = $.trim($("#repassword").val());
+            if(!repassword){
+                $("#error_repassword").addClass("q-infored");
+                $("#error_repassword").html("密码不能为空");
+                return false;
+            }else{
+                $("#error_repassword").removeClass("q-infored");
+                $("#error_repassword").html("");
+                if(password !== repassword){
+                    $("#error_repassword").addClass("q-infored");
+                    $("#error_repassword").html("两次密码不一致");
+                    return false;
+                }else{
+                    $("#error_repassword").removeClass("q-infored");
+                    $("#error_repassword").html("");
+                }
+            }
+            return true;
+        }
+
+        /****
+         * 当重复密码输入不为空时
+         * ****/
+        function testRepasswordBlur()
+        {
+            var repassword = $.trim($("#repassword").val());
+            if(repassword){
+                checkRepassword();
+            }
+        }
+        /*
+        *提交检查
+        */
+        function check()
+        {
+            var bool_username = checkUsername();
+            var bool_password = checkPassword();
+            var bool_repassword = checkRepassword();
+            if(bool_username && bool_password && bool_repassword){
+                return true;
+            }else{
+                return false;
+            }
+            return true;
+        }
+        /**
+         * 清除
+         */
+        function clearMsg(o)
+        {
+            var id = o.id;
+            $("#error_"+id).removeClass("q-infored");
+            $("#error_"+id).html("");
+        }
+
+    </script>
+  </body>
+</html>

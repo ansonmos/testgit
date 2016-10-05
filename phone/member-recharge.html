@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>快速充值</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/css.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="content_mid">
+        <!--头部begin-->
+        <div class="qfb-position"></div>
+        <div class="qfb-head">
+            <div class="logo-main">
+                <a href="javascript:;" onclick="history.go(-1)" class="before"></a>
+                <span class="qfb-title">快速充值</span>
+            </div>
+        </div>
+        <!--头部end-->
+        <!--底部begin-->
+
+        <div class="qfb-footer">
+            <ul class="qfb-cplist">
+                <li  class="common-title">
+                    <h2 >快速充值</h2>
+                </li>
+                <li class="qfb-common1">
+                    <a href="recharge-online.html" class="qfb-lists">
+                        <span class="qfb-icon qfb-cpicon1"></span>
+                        <span >在线充值</span>
+                        <span class="qfb-icon-right"></span>
+                    </a>
+                </li>
+
+                <li class="qfb-common1">
+                    <a href="wx-scan.html" class="qfb-lists">
+                        <span class="qfb-icon qfb-cpicon2"></span>
+                        <span>微信扫码充值</span>
+                        <span class="qfb-icon-right"></span>
+                    </a>
+                </li>
+                <li class="qfb-common1">
+                    <a href="bank-transfer.html" class="qfb-lists">
+                        <span class="qfb-icon qfb-cpicon3"></span>
+                        <span>银行转账充值</span>
+                        <span class="qfb-icon-right"></span>
+                    </a>
+                </li>
+                <li class="qfb-common1">
+                    <a href="alipay.html" class="qfb-lists">
+                        <span class="qfb-icon qfb-cpicon3"></span>
+                        <span>支付宝充值</span>
+                        <span class="qfb-icon-right"></span>
+                    </a>
+                </li>
+                <li class="qfb-common1">
+                    <a href="wx-transfer.html" class="qfb-lists">
+                        <span class="qfb-icon qfb-cpicon3"></span>
+                        <span>微信支付</span>
+                        <span class="qfb-icon-right"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!--底部end-->
+    </div>
+
+
+    <div class="footer">
+        <div class="line_grey"></div>
+        <div class="line_white"></div>
+        <div class="qfb-footerbox">
+            <p class="qfb-copyright1">Copyright&copy;2013-2015 11k.com All Rights Reserved<br>澳门葡京贵宾会</p>
+        </div>
+
+        <div class="footer_navlink navbar-fixed-bottom">
+            <a data-ajax="false" href="index.html" class="ui-link"><div class="flink01">首页</div></a>
+            <a data-ajax="false" href="" class="ui-link"><div class="flink01">客服</div></a>
+            <a data-ajax="false" href="promo.html" class="ui-link"><div class="flink01">优惠</div></a>
+            <a data-ajax="false" href="aboutus.html" class="ui-link"><div class="flink01">关于我们</div></a>
+            <a data-ajax="false" href="member-home.html" class="ui-link"><div class="flink01">用户中心</div></a>
+        </div>
+        <div style="display: none" class="tips_no_login">
+            <span data-href="login.htm" class="link_ct"><i class="icon i_user_login"></i>会员登录</span>
+            <span data-href="register.htm" class="link_ct"><i class="icon i_user_reg"></i>立即加入</span>
+        </div>
+    </div>
+  </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/hhSwipe.js"></script>
+
+    <script type="text/javascript">
+
+        //轮播
+        var bullets = document.getElementById('position').getElementsByTagName('li');
+        var banner = Swipe(document.getElementById('mySwipe'), {
+                auto: 4000,
+                continuous: true,
+                disableScroll:false,
+                callback: function(pos) {
+                    var i = bullets.length;
+                    var iw = bullets.length;
+                    while (i--) {
+                        bullets[i].className = ' ';
+                    }
+                    bullets[pos%iw].className = 'cur';
+                }
+            })
+
+
+        $(function(){
+
+        });
+
+
+
+
+        /**
+         * 验证用户名
+         */
+        function checkUsername()
+        {
+            var mobile = $.trim($("#username").val());
+            //用户名为空
+            if(!mobile){
+                $("#error_mobile").addClass("q-infored");
+                $("#error_mobile").html("请输入用户名");
+                return false;
+            }else{
+                $("#error_mobile").removeClass("q-infored");
+                $("#error_mobile").html("");
+            }
+            return true;
+        }
+
+        function checkPassword()
+        {
+            var mobile = $.trim($("#password").val());
+            //用户名为空
+            if(!mobile){
+                $("#error_password").addClass("q-infored");
+                $("#error_password").html("密码不能为空");
+                return false;
+            }else{
+                $("#error_password").removeClass("q-infored");
+                $("#error_password").html("");
+            }
+            return true;
+        }
+        /**
+         * 清除
+         */
+        function clearMsg(o)
+        {
+            var id = o.id;
+            $("#error_"+id).removeClass("q-infored");
+            $("#error_"+id).html("");
+        }
+
+        function check()
+        {
+            var bool_mobile = checkUsername();
+            var bool_verify = checkVerify();
+            var bool_password = checkPassword();
+            var mobile = "";
+            var bool_rmobile = mobile.length>0 ? true : checkRmobile();
+            var bool_isRegisted =  !isRegisted();
+            var bool_isAgree = isAgree();
+            if(bool_mobile && bool_verify && bool_password && bool_rmobile && bool_isRegisted && bool_isAgree){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+
+    </script>
+
+</html>

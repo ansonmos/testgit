@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>微信扫码支付</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/css.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div class="content_mid">
+    <!--头部begin-->
+    <div class="qfb-position"></div>
+    <div class="qfb-head">
+        <div class="logo-main">
+            <a href="javascript:;" onclick="history.go(-1)" class="before"></a>
+            <span class="qfb-title">微信扫码支付</span>
+        </div>
+    </div>
+    <!--头部end-->
+    <!--底部begin-->
+    <div class="qfb-footer">
+        <!--充值提醒 bof-->
+        <div class="recharge_info">
+            <div class="info_content">
+                <h3>温馨提示</h3>
+                <p>1、单笔充值金额是100-50000元，如需大额充值请使用转账充值单笔上限500万元！</p>
+                <p>2、如果您的银行在线支付限额或您的手机不支持在线充值请选择其他充值方式！</p>
+                <p>3、每天坚持大额在线充值可提高银行流水有利于在银行办理大额信用卡或提额！</p>
+            </div>
+        </div>
+        <!--充值提醒 eof-->
+
+        <div class="recharge_form">
+            <form action="" method="post" class="form_conent" role="form">
+                <!--充值输入框 bof-->
+                <div class="input-group">
+                    <span class="input-group-addon">金额</span>
+                    <input type="text" name="money" class="form-control" placeholder="请输入充值金额">
+                </div>
+                <!--充值输入框 eof-->
+                <!--银行列表 bof-->
+                <div class="choose_wrap">
+                    <div class="chinfo">
+                        <h3>请选择支付方式</h3>
+                    </div>
+                    <ul class="bank_lists">
+                        <li class="blist">
+                            <div class="row">
+                                <div class="logo_lf"> <img src="dist/images/bank/wxlogo.png" class="img-circle" alt=""> </div>
+                                <div class="logo_desc_rg"><span class="bankname">微信扫码支付</span> </div>
+                                <div class="sel_btn"><input type="radio" name="bankname" /> </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--银行列表 eof-->
+                <div class="sub_btn">
+                    <button type="submit" class="btn btn-danger">提交充值</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--底部end-->
+</div>
+
+<div class="footer">
+    <div class="line_grey"></div>
+    <div class="line_white"></div>
+    <div class="qfb-footerbox">
+        <p class="qfb-copyright1">Copyright&copy;2013-2015 11k.com All Rights Reserved<br>澳门葡京贵宾会</p>
+    </div>
+
+    <div class="footer_navlink navbar-fixed-bottom">
+        <a data-ajax="false" href="index.html" class="ui-link"><div class="flink01">首页</div></a>
+        <a data-ajax="false" href="" class="ui-link"><div class="flink01">客服</div></a>
+        <a data-ajax="false" href="promo.html" class="ui-link"><div class="flink01">优惠</div></a>
+        <a data-ajax="false" href="aboutus.html" class="ui-link"><div class="flink01">关于我们</div></a>
+        <a data-ajax="false" href="member-home.html" class="ui-link"><div class="flink01">用户中心</div></a>
+    </div>
+</div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="dist/js/bootstrap.min.js"></script>
+
+
+</html>
